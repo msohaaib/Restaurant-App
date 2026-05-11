@@ -1,0 +1,19 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "admin.user.my-app.vercel.app" }],
+      "destination": "/admin/:path*"
+    },
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "admin.my-app.vercel.app" }],
+      "destination": "/login/:path*"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/home/:path*"
+    }
+  ]
+}
