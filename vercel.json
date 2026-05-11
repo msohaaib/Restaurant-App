@@ -3,12 +3,19 @@
   "rewrites": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "admin.user.my-app.vercel.app" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "admin.user.restaurant-app-two-sandy.vercel.app"
+        }
+      ],
       "destination": "/admin/:path*"
     },
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "admin.my-app.vercel.app" }],
+      "has": [
+        { "type": "host", "value": "admin.restaurant-app-two-sandy.vercel.app" }
+      ],
       "destination": "/login/:path*"
     },
     {
